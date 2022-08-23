@@ -1,0 +1,309 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Tamaños de Fuente */
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+
+/* Estilizado para Movil */
+
+
+/* Menu de Navegación */
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.502);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.502);
+    color: #fff;
+    background-color: #8a2be2;
+}
+
+
+button:hover{
+    background-color: #6e20b6;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-accent{
+    color: #8a2be2;
+}
+
+header{
+    background-color: #f5f5f5;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #8a2be2;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+header a:hover{
+    color: #8a2be2;
+}
+
+/* Seccion hero */
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: #fff;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.58), rgba(0,0,0,0.58)),url(media/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: #fff;
+}
+
+#hero button{
+    font-size: 1.75rem;
+}
+
+#somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+/* Seccioón de Programas */
+
+#nuestros-programas{
+    background-color: rgb(30, 30, 30);
+    color: #fff;
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 150px 12px;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+.carta{ 
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.58), rgba(0,0,0,0.58)), url(media/front-end.jpg);
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.58), rgba(0,0,0,0.58)), url(media/full-stack.jpg);
+}
+
+.carta:last-child{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.58), rgba(0,0,0,0.58)), url(media/python.jpg);
+}
+
+/* Sección de Características */
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 12px 0px ;
+    font-weight: bold;
+}
+
+/* CTA */
+#cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(30, 30, 30);
+    color: #fff;
+    height: 80vh;
+}
+
+#cta h2{
+    font-size: 9vw;
+}
+
+#cta button{
+    font-size: 5vw;
+}
+
+/* Derechos de Autor */
+footer{
+    background-color: #e6e6e6;
+}
+
+/* footer p{
+    margin: 0;
+    color: #646464;
+} */
+
+footer .container{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilizado para PC */
+
+@media (min-width: 720px){
+
+    /* Menu de Navegación */
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+     header .container{
+        flex-direction: row;
+        justify-content: space-between;
+     }
+
+     header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+     }
+
+     /* Seccion hero */
+     #hero h1{
+        font-size: 5em;
+     }
+
+     #somos-proya .container{
+        display: flex;
+        justify-content: space-evenly;
+     }
+
+     #somos-proya .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     }
+
+     #somos-proya .img-container{
+        background-image: url(media/somos-proya.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+     }
+
+    /* Seccioón de Programas */
+     #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+     }
+
+     #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+     }
+
+     #nuestros-programas h3{
+        margin-top: 0;
+     }
+
+     #nuestros-programas .carta{
+        padding: 15px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+     }
+
+    /* Sección de Características */
+
+    #caracteristicas .container{
+        display: flex;
+        text-align: initial;
+    }
+
+    #caracteristicas .imagen{
+        background-image: url(media/marvin-meyer-SYTO3xs06fU-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 400px;
+     }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    /* CTA */
+    #cta h2{
+        font-size: 5em;
+    }
+
+    #cta button{
+        font-size: 2em;
+    }
+}
+
+/* Media para la imagen de la seccción caracteristicas  */
+@media (max-width: 930px){
+    #caracteristicas .imagen{
+        width: 300px;
+        height: 200px;
+    }
+}
+
